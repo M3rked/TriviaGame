@@ -1,0 +1,73 @@
+*, *::before, *::after{
+     box-sizing: border-box;
+     font-family: Arial;
+
+}
+
+
+:root{
+     --hue-neutral:200;
+     --hue-wrong:0;
+     --hue-correct: 120;
+
+}
+
+body {
+
+padding: 0;
+margin: 0;
+display: flex;
+justify-content:center;
+align-items: center;
+background-color: yellowgreen;
+}
+
+
+body.correct{
+     --hue:var(--hue-correct);
+}
+
+body.wrong{
+     --hue: var(--hue-wrong);
+}
+
+
+.container{
+      width: 900px;
+      background-color: lightyellow;
+      padding: 5px;
+
+}
+
+
+.btn-grid{
+     display: grid;
+     transition:0.3s;
+     
+}
+
+.btn{
+     color: blue;
+     background-color: peachpuff;
+
+}
+
+.btn:hover{
+     border-color: black;
+}
+
+.start-btn, .next-btn{
+     font-size: 2 rem;
+     font-weight: bold;
+     padding: 10px 20px;
+}
+
+.controls{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.hide{
+     display: none;
+}
