@@ -1,6 +1,6 @@
 *, *::before, *::after{
      box-sizing: border-box;
-     font-family: Arial;
+     font-family: 'Franklin Gothic Medium';
 
 }
 
@@ -19,7 +19,7 @@ margin: 0;
 display: flex;
 justify-content:center;
 align-items: center;
-background-color: yellowgreen;
+background-color: black;
 }
 
 
@@ -33,9 +33,13 @@ body.wrong{
 
 
 .container{
-      width: 900px;
+      width: 700px;
+      height: 500px;
       background-color: lightyellow;
       padding: 5px;
+      align-content: center;
+      justify-content: center;
+
 
 }
 
@@ -43,6 +47,7 @@ body.wrong{
 .btn-grid{
      display: grid;
      transition:0.3s;
+     
      
 }
 
@@ -57,9 +62,12 @@ body.wrong{
 }
 
 .start-btn, .next-btn{
+     width: 40%;
+     height: 30%;
      font-size: 2 rem;
      font-weight: bold;
      padding: 10px 20px;
+     align-items: center;
 }
 
 .controls{
@@ -70,4 +78,25 @@ body.wrong{
 
 .hide{
      display: none;
+}
+
+.displayTimer {
+    text-align: center;
+     font: 25px;
+
+}
+
+
+.title{
+     font-weight: bold;
+     width: 50%;
+     height: 20%;
+     color: blue;
+     text-align: right;
+}
+
+
+.displaytimer{
+     text-align: right;
+     
 }

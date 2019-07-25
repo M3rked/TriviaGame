@@ -19,6 +19,7 @@ nextButton.addEventListener("click", () => {
 
 function startGame(){
     console.log('Start')
+    monkeypoop= 20;
     startButton.classList.add("hide")
     shuffledQuestions = questions.sort(()=> Math.random() - .5)
     currentQuestionIndex = 0
@@ -180,3 +181,28 @@ const questions = [
 
 
 ]
+
+
+
+
+
+
+
+function countdown(){
+    
+     monkeypoop = monkeypoop - 1;
+    if (monkeypoop < 20) {
+        
+        displayTimer.innerText = monkeypoop;
+        
+    }
+
+    if (monkeypoop < 1 ){
+        window.clearInterval(update);
+        
+    }
+    
+     update = setInterval("countdown()", 1000);
+}
+
+
