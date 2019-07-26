@@ -188,7 +188,7 @@ const questions = [
 
 
 
-function countdown(){
+   setInterval("countdown()", 1000); function displayTimer(){
     
      monkeypoop = monkeypoop - 1;
     if (monkeypoop < 20) {
@@ -202,7 +202,7 @@ function countdown(){
         
     }
     
-     update = setInterval("countdown()", 1000);
+    update = setInterval("countdown()", 1000);
 }
 
 
